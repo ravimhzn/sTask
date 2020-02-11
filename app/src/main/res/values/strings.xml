@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">sTask</string>
+    <string name="title_activity_settings">App Settings</string>
+    <string name="downloads">Downloads</string>
+    <string name="stream">Streaming</string>
+    <string name="abt">About</string>
+    <string name="downloads_wifi">Downloads on WiFi only</string>
+    <string name="downloads_quality">Downloads Video Quality</string>
+    <string name="qd">Quick and Dirty</string>
+    <string name="qd_msg">Faster to download, uses less storage space on your device, good video quality</string>
+    <string name="sd">Standard</string>
+    <string name="sd_msg">Best balance between download speed, space used on your device and video quality</string>
+    <string name="bd">Best</string>
+    <string name="bd_msg">Slower to download, uses more space on your device, best video quality</string>
+    <string name="dw_loc">Download Location</string>
+    <string name="int_stg">Internal Storage</string>
+    <string name="dummy_storage">41.4 GB Free</string>
+    <string name="dv_stg">Device Storage</string>
+    <string name="usd">Used | 8.7 GB</string>
+    <string name="av">Available | 41.4 GB</string>
+    <string name="auto">Autoplay</string>
+    <string name="auto_msg">We\'ll automatically play the next episode in the series you\'re watching</string>
+    <string name="ask">Ask me if I\'m still watching</string>
+    <string name="ask_msg">We\'ll check you\'re still watching after 4 episodes or one hour, whichever is longer</string>
+    <string name="cell">Cellular data warning</string>
+    <string name="cell_msg">Warn me if I\'m streaming via mobile data. Mobile data allowances and costs may apply</string>
+    <string name="stan">Stan App Version</string>
+    <string name="stan_app_ver">3.20.1 (b2136f0fa/ 4.2.19)</string>
+    <string name="build">Build Number</string>
+    <string name="build_num">517</string>
 </resources>

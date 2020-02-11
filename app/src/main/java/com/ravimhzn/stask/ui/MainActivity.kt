@@ -1,7 +1,10 @@
 package com.ravimhzn.stask.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -11,7 +14,7 @@ import okhttp3.OkHttpClient
 import okhttp3.Request
 import javax.inject.Inject
 
-class MainActivity : DaggerAppCompatActivity() {
+class MainActivity : DaggerAppCompatActivity(), View.OnClickListener {
 
     private var TAG = "MainActivity::"
 
@@ -31,6 +34,7 @@ class MainActivity : DaggerAppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         tvResponse = findViewById(R.id.tvResponse)
+        findViewById<Button>(R.id.settings).setOnClickListener(this)
         initializeViewModel()
         subscribeToObservers()
     }
@@ -61,5 +65,17 @@ class MainActivity : DaggerAppCompatActivity() {
             TAG,
             OkHttpClient().newCall(Request.Builder().url(u).build()).execute().body().toString()
         )
+    }
+
+    override fun onClick(p0: View?) {
+        when (p0?.id) {
+            R.id.settings -> {
+                goToSettingsActivity()
+            }
+        }
+    }
+
+    private fun goToSettingsActivity() {
+        startActivity(Intent(this, Settings::class.java))
     }
 }

@@ -70,10 +70,10 @@
 
             <ImageView
                 android:id="@+id/imageConnection"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/margin24"
+                android:layout_height="@dimen/margin24"
                 android:layout_centerVertical="true"
-                android:src="@mipmap/ic_action_wallet_profile" />
+                android:src="@mipmap/icon_cast" />
 
         </RelativeLayout>
 
